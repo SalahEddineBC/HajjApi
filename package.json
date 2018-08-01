@@ -1,0 +1,29 @@
+{
+    "name": "hajjapi",
+    "version": "1.0.0",
+    "description": "real time crowd management",
+    "main": "\t",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": " node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/SalahEddineBC/HajjApi.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/SalahEddineBC/HajjApi/issues"
+    },
+    "homepage": "https://github.com/SalahEddineBC/HajjApi#readme",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "express-restify-mongoose": "^5.0.0",
+        "http": "^0.0.0",
+        "method-override": "^3.0.0",
+        "mongoose": "^5.2.6",
+        "socket.io": "^2.1.1"
+    }
+}
