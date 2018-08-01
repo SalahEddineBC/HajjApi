@@ -31,5 +31,5 @@ const UserSchema = new mongoose.Schema({
     coordinates: [Number]
   }
 });
-DriverSchema.index({ location: '2dsphere' });
+UserSchema.index({ location: '2dsphere' });
 module.exports = mongoose.model('User', UserSchema);

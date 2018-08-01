@@ -9,5 +9,5 @@ const Schema = new mongoose.Schema({
     coordinates: [Number]
   }
 });
-DriverSchema.index({ location: '2dsphere' });
+Schema.index({ location: '2dsphere' });
 module.exports = mongoose.model('Agent', Schema);
