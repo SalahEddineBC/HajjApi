@@ -9,7 +9,7 @@ function nearsetAgents(coordinates, callback) {
                     type: 'Point',
                     coordinates: [coordinates.latitude, coordinates.longitude]
                 },
-                $maxDistance: 300000
+                $maxDistance: 3000
             }
         }
     }).then(res => {
