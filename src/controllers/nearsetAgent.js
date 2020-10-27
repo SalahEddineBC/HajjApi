@@ -1,7 +1,6 @@
 const {Agent}=require('../models');
 
 function nearsetAgents(coordinates, callback) {
-    console.log(coordinates);
     Agent.find({
         location: {
             $near: {
@@ -13,8 +12,7 @@ function nearsetAgents(coordinates, callback) {
             }
         }
     }).then(res => {
-        console.log(res);
-        callback(JSON.stringify(res));
-    });
+      callback(res);
+    }).catch(e => console.error('this happend' + e));
 }
 module.exports = nearsetAgents;
